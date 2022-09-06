@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body, #screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#device{
+    display: flex;
+    flex-direction: column;
+    width: 400px;height: 600px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 3px rgb(71, 190, 245);
+    border-radius: 1rem;
+    background-color: rgb(245, 203, 148);
+}
+.answer, .input {
+    width: 350px;
+    word-wrap: break-word;
+    font-weight:bold;
+}
+.answer{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.179);
+    font-size: 20px;
+    color:rgba(255, 255, 255, 0.85);
+}
+.input{
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.292);
+    font-size: 36px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.previous, .current{
+    width : 350px;
+    height: 50px;
+}
+.keypad{
+    margin-top: 20px;
+    width: 350px;
+    height:200px;
+}
+button{
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    background-color: coral;
+    font-size: 18px;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.427);
+    
+}
+button:active{
+    background-color: rgba(255, 255, 255, 0.244);
+}
+
+
+.keycontainer{
+    display: grid;
+    gap:1px;
+}
