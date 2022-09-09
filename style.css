@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+body{
+    background-image: linear-gradient(to top, #30b5d0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    height: 1000px;
+    overflow: hidden;
+}
 body, #screen{
     display: flex;
     flex-direction: column;
@@ -9,62 +14,76 @@ body, #screen{
 }
 
 #device{
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     width: 400px;height: 600px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 5px 3px rgb(71, 190, 245);
-    border-radius: 1rem;
-    background-color: rgb(245, 203, 148);
+    border: 2px solid #ffffff84;
+    box-shadow: 20px 20px 10px 3px #33086746;
+    border-radius: 0.5rem;
+    background-color: #8c59cf;
 }
-.answer, .input {
-    width: 350px;
+.result, .input {
+    width: 400px;
     word-wrap: break-word;
     font-weight:bold;
+    background-color: #30b5d08a;
+    
 }
-.answer{
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.179);
-    font-size: 20px;
-    color:rgba(255, 255, 255, 0.85);
+.result{
+    height: 80px;
+    font-size: 30px;
+    color:rgba(255, 255, 255, 0.525);
+    display: flex;
+    align-items: center;
+    text-align-last: left;
+    border-top-right-radius:0.5rem ;
+    border-top-left-radius:0.5rem ;
 }
 .input{
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.292);
-    font-size: 36px;
+    height: 200px;
+    font-size: 40px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-bottom-right-radius:0.5rem ;
+    border-bottom-left-radius:0.5rem ;
 }
 .previous, .current{
-    width : 350px;
+    width : 370px;
     height: 50px;
+    text-align: end;
+}
+.previous{
+    color: rgba(255, 255, 255, 0.773);
 }
 .keypad{
-    margin-top: 20px;
-    width: 350px;
-    height:200px;
+    margin-top: 0px;
+    width: 400px;
+    height:320px;
 }
 button{
-    height: 40px;
+    height: 64px;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    border: none;
-    background-color: coral;
+    border: 1px solid rgba(255, 255, 255, 0.511);
+    border-radius: 0.5rem;
+    background-color: #20254085;
     font-size: 18px;
 }
 button:hover{
-    background-color: rgba(0, 0, 0, 0.427);
+    background-color: #282e4f;
     
 }
 button:active{
-    background-color: rgba(255, 255, 255, 0.244);
+    background-color: #f2eeeb4f;
 }
 
 
 .keycontainer{
     display: grid;
-    gap:1px;
+    gap: -2px;
 }
